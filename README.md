@@ -26,14 +26,9 @@ assign x = b;
 assign y = b;   // b drives two outputs at once, no conflict
 assign z = c;
 
-
 3. Logic Gates = Verilog Operators
-verilogassign out = ~in;              // NOT
-assign out = a & b;            // AND
-assign out = ~(a | b);         // NOR
-assign out = a ^~ b;           // XNOR
 
-Truth table habit: always sanity-check gate logic against a truth table before trusting the code — e.g. XNOR is 1 exactly when inputs match.
+GateBehaviorOperatorNOTinverts input~AND1 only if all inputs 1&OR1 if any input 1|NORNOT(OR) — 1 only if all inputs 0~(a|b)XOR1 if inputs differ^XNOR1 if inputs equal^~ or ~^
 
 
 4. Internal Wires — Building Multi-Stage Logic
