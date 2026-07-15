@@ -28,7 +28,10 @@ assign z = c;
 
 3. Logic Gates = Verilog Operators
 
-GateBehaviorOperatorNOTinverts input~AND1 only if all inputs 1&OR1 if any input 1|NORNOT(OR) — 1 only if all inputs 0~(a|b)XOR1 if inputs differ^XNOR1 if inputs equal^~ or ~^
+NOT =~n
+AND = &
+NOR=~(a|b)
+XOR=a^~b
 
 
 4. Internal Wires — Building Multi-Stage Logic
